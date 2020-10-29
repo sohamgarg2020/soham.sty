@@ -11,4 +11,8 @@
 
 \maketitle
 
+\section{Math Commands}
+
+$\floor{\frac{2x+3}{7x-3}}$\\
+$\abs{0}$
 \end{document}

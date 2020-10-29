@@ -14,6 +14,14 @@
 \apptocmd{\@bspretitle}{\Huge \fontfamily{ptm}\selectfont \bfseries}{}{}
 \apptocmd{\@bspreauthor}{\Large \fontfamily{ptm}\selectfont \bfseries}{}{}
 
+
+%math commands
+\newcommand{\floor}[1]{%
+	\left\lfloor {#1}\right\rfloor%
+}%
+\newcommand{\abs}[1]{%
+    \mid {#1}\mid
+}%
 %\newcommand{\title}[1]{%
 %    \textbf{#1}%
 %}%
