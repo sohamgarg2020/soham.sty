@@ -10,6 +10,7 @@
 \RequirePackage{titling}
 \RequirePackage{etoolbox}
 
+
 \apptocmd{\@bspredate}{\fontfamily{ptm}\selectfont \itshape}{}{}
 \apptocmd{\@bspretitle}{\Huge \fontfamily{ptm}\selectfont \bfseries}{}{}
 \apptocmd{\@bspreauthor}{\Large \fontfamily{ptm}\selectfont \bfseries}{}{}
@@ -20,11 +21,7 @@
 	\left\lfloor {#1}\right\rfloor%
 }%
 \newcommand{\abs}[1]{%
-    \left\mid {#1}\right\mid
-}%
-\newcommand{\rt}[2]{%
-  \sqrt[#1]{#2}%
-  %omit #1 if you want there to be nothing on top of the root.
+    \left\vert {#1}\right\vert
 }%
 \newcommand{\roundb}[1]{%
     \left(#1 \right)
@@ -33,4 +30,5 @@
 %    \textbf{#1}%
 %}%
 \let\myDate\date
+\let\rt\sqrt
 
