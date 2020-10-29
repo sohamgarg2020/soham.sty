@@ -14,5 +14,7 @@
 \section{Math Commands}
 
 $\floor{\frac{2x+3}{7x-3}}$\\
-$\abs{0}$
+$\abs{\frac{5}{7}}$\\
+$\rt{}{6}$\\
+$\rt{3}{6}$
 \end{document}
