@@ -1,0 +1,21 @@
+% this is my first package
+% 
+% (c) soham.sty
+%
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{soham}
+
+\RequirePackage{amsmath}
+\RequirePackage[utf8]{inputenc}
+\RequirePackage{titling}
+\RequirePackage{etoolbox}
+
+\apptocmd{\@bspredate}{\fontfamily{ptm}\selectfont \itshape}{}{}
+\apptocmd{\@bspretitle}{\Huge \fontfamily{ptm}\selectfont \bfseries}{}{}
+\apptocmd{\@bspreauthor}{\Large \fontfamily{ptm}\selectfont \bfseries}{}{}
+
+%\newcommand{\title}[1]{%
+%    \textbf{#1}%
+%}%
+\let\myDate\date
+
