@@ -11,6 +11,7 @@
 \RequirePackage{etoolbox}
 \RequirePackage{graphicx}
 \RequirePackage{tipa}
+\RequirePackage{wasysym}
 \apptocmd{\@bspredate}{\fontfamily{ptm}\selectfont \itshape}{}{}
 \apptocmd{\@bspretitle}{\Huge \fontfamily{ptm}\selectfont \bfseries}{}{}
 \apptocmd{\@bspreauthor}{\Large \fontfamily{ptm}\selectfont \bfseries}{}{}
@@ -45,11 +46,11 @@
 			\scalebox{2.718}{\color{purple}\thechapter}\enskip}}
 			}
 	\renewcommand*{\sectionformat}%
-		{\color{purple}\P\thesection\enskip}
+		{\color{purple}\ascnode\thesection\enskip}
 	\renewcommand*{\subsectionformat}%
 		{\color{purple}\O\thesubsection\enskip}
 	\renewcommand*{\subsubsectionformat}%
-		{\color{purple}$\mu$\thesubsubsection\enskip}
+		{\color{purple}\aries\thesubsubsection\enskip}
 	\KOMAoptions{numbers=noenddot}
 	%\usetocstyle{KOMAlike}
 		}
