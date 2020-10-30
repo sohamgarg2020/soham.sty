@@ -1,4 +1,4 @@
-\documentclass{article}
+\documentclass[11pt]{scrartcl}
 \usepackage{soham}
 
 \title{Soham Package Demonstration}
@@ -11,10 +11,12 @@
 
 \maketitle
 
-\section{Math Commands}
+\section{Section}
 $\floor{\frac{2x+3}{7x-3}}$\\
 $\abs{\frac{5}{7}}$\\
 $\rt{5}$\\
 $\rt[5]{45}$\\
 $\roundb{\frac{7}{123}}$
+\subsection{Subsection}
+\subsubsection{Subsubsection}
 \end{document}
