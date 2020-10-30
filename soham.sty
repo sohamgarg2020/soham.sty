@@ -4,13 +4,13 @@
 %
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{soham}
-
+\RequirePackage{xcolor}
 \RequirePackage{amsmath}
 \RequirePackage[utf8]{inputenc}
 \RequirePackage{titling}
 \RequirePackage{etoolbox}
-
-
+\RequirePackage{graphicx}
+\RequirePackage{tipa}
 \apptocmd{\@bspredate}{\fontfamily{ptm}\selectfont \itshape}{}{}
 \apptocmd{\@bspretitle}{\Huge \fontfamily{ptm}\selectfont \bfseries}{}{}
 \apptocmd{\@bspreauthor}{\Large \fontfamily{ptm}\selectfont \bfseries}{}{}
@@ -32,3 +32,24 @@
 \let\myDate\date
 \let\rt\sqrt
 
+%letting sections
+\@ifundefined{KOMAClassName}{}{
+	\@ifundefined{chapter}{}{
+		\addtokomafont{partprefix}{\rmfamily}
+		\renewcommand*{\partformat}{\color{purple}
+			\scalebox{2.5}{\thepart}\enlargethispage{2em}}
+		\addtokomafont{chapterprefix}{\raggedleft}
+		\RedeclareSectionCommand[beforeskip=0.5em]{chapter}
+		\renewcommand*{\chapterformat}{\mbox{%
+			\scalebox{1.5}{\chapappifchapterprefix{\nobreakspace}}%
+			\scalebox{2.718}{\color{purple}\thechapter}\enskip}}
+			}
+	\renewcommand*{\sectionformat}%
+		{\color{purple}\P\thesection\enskip}
+	\renewcommand*{\subsectionformat}%
+		{\color{purple}\O\thesubsection\enskip}
+	\renewcommand*{\subsubsectionformat}%
+		{\color{purple}$\mu$\thesubsubsection\enskip}
+	\KOMAoptions{numbers=noenddot}
+	%\usetocstyle{KOMAlike}
+		}
