@@ -14,5 +14,7 @@
 \section{Math Commands}
 $\floor{\frac{2x+3}{7x-3}}$\\
 $\abs{\frac{5}{7}}$\\
+$\rt{5}$\\
+$\rt[5]{45}$\\
 $\roundb{\frac{7}{123}}$
 \end{document}
